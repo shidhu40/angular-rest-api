@@ -22,7 +22,9 @@ export class EmployeeComponent implements OnInit {
 	ngOnInit() {
 		this.httpClientService.getEmployees().subscribe(
 			 response =>{ 
+				console.log(response);
 				this.employees=response.data;
+				console.log(this.employees);
 			}
 		);
 	};

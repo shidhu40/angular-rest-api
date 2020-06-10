@@ -8,12 +8,14 @@ import { EmployeeComponent } from './employee/employee.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';  
-import { DataTablesModule } from 'angular-datatables'; 
+import { DataTablesModule } from 'angular-datatables';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component'; 
 
   
 @NgModule({  
   declarations: [  
-    AppComponent, EmployeeComponent, AddEmployeeComponent, HeaderComponent, FooterComponent 
+    AppComponent, EmployeeComponent, AddEmployeeComponent, HeaderComponent, FooterComponent, SidebarComponent, BreadcrumbComponent 
   ],  
   imports: [  
     BrowserModule,  

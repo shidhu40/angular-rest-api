@@ -19,15 +19,17 @@ export class HttpClientService {
 	constructor( private httpClient:HttpClient ) { 
      
 	}
+	
 	baseUrl = "http://dummy.restapiexample.com/api/v1";
-    
+    URL= "http://localhost/php-api/upload.php";
+	
 	public getEmployees()
 	{
 		return this.httpClient.get<Employee[]>(this.baseUrl+'/employees');
 	}
 	
 	public createEmployee(employee) {
-		return this.httpClient.post<Employee>(this.baseUrl+"/create", employee);
+		return this.httpClient.post<Employee>(this.URL, employee);
 	}
 	
 	public deleteEmployee(id: number){
